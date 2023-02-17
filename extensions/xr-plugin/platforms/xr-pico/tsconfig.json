@@ -1,0 +1,25 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "module": "ESNext",
+        "outDir": "./dist",
+        // "rootDir": "./source",
+        "types": [
+            "node",
+            "../../@types/cc",
+            "../../@types/editor"
+        ],
+        "typeRoots": [
+            "../../@types"
+        ],
+        "lib": [
+            "dom",
+            "es7"
+        ],
+        "skipLibCheck": true
+    },
+    "include": [
+        "source",
+        "../xr-common"
+    ]
+}

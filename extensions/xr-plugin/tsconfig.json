@@ -1,0 +1,26 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "module": "commonjs",
+        "outDir": "./dist",
+        "rootDir": "./source",
+        "types": [
+            "node",
+            "../../@types/cc",
+            "../../@types/editor"
+        ],
+        "typeRoots": [
+            "./@types",
+            "../../@types"
+        ],
+        "lib": [
+            "dom",
+            "es7"
+        ],
+        "skipLibCheck": true
+    },
+    "include": [
+        "source"
+    ],
+    "exclude": ["../../xr-plugin/assets"]
+}
